@@ -1,0 +1,233 @@
+{
+	"doctors": [
+		{
+			"person": {
+				"id": "doct1",
+				"name": "Apple",
+				"age": 24
+			},
+			"department": "Dep1"
+		},
+		{
+			"person": {
+				"id": "doct2",
+				"name": "Banana",
+				"age": 25
+			},
+			"department": "Dep1"
+		},
+		{
+			"person": {
+				"id": "doct3",
+				"name": "Catt",
+				"age": 26
+			},
+			"department": "Dep2"
+		}
+	],
+	"patients": [
+		{
+			"patient_info": {
+				"person": {
+					"id": "p1",
+					"name": "Jack",
+					"age": 44
+				},
+				"birthday": "1980-4-10",
+				"isMarried": true,
+				"career": "career1",
+				"address": "addr1",
+				"country": "China",
+				"region": "Beijing"
+			},
+			"patient_records": [
+				{
+					"id": "p1",
+					"record_id": "testtest1",
+					"type": "Type1",
+					"time": "2021-4-7 13:05:25",
+					"content": {},
+					"signed_by": {
+						"person": {
+							"id": "doct1",
+							"name": "Apple",
+							"age": 24
+						},
+						"department": "Dep1"
+					},
+					"collaborators": [
+						{
+							"doctor": {
+								"person": {
+									"id": "doct1",
+									"name": "Apple",
+									"age": 24
+								},
+								"department": "Dep1"
+							},
+							"role": "member"
+						},
+						{
+							"doctor": {
+								"person": {
+									"id": "doct2",
+									"name": "Banana",
+									"age": 25
+								},
+								"department": "Dep1"
+							},
+							"role": "manager"
+						}
+					]
+				},
+				{
+					"id": "p1",
+					"record_id": "testtest2",
+					"type": "Type2",
+					"time": "2021-4-8 11:45:14",
+					"content": {
+						"key1": true,
+						"key2": "string"
+					},
+					"signed_by": {
+						"person": {
+							"id": "doct2",
+							"name": "Banana",
+							"age": 25
+						},
+						"department": "Dep1"
+					},
+					"collaborators": [
+						{
+							"role": "manager",
+							"doctor": {
+								"person": {
+									"id": "doct2",
+									"name": "Banana",
+									"age": 25
+								},
+								"department": "Dep1"
+							}
+						}
+					]
+				},
+				{
+					"id": "p1",
+					"record_id": "testtest3",
+					"type": "Type3",
+					"time": "2021-5-10 11:45:14",
+					"content": {},
+					"signed_by": {
+						"person": {
+							"id": "doct1",
+							"name": "Apple",
+							"age": 24
+						},
+						"department": "Dep1"
+					},
+					"collaborators": [
+						{
+							"doctor": {
+								"person": {
+									"id": "doct1",
+									"name": "Apple",
+									"age": 24
+								},
+								"department": "Dep1"
+							},
+							"role": "manager"
+						}
+					]
+				}
+			]
+		},
+		{
+			"patient_info": {
+				"person": {
+					"id": "p2",
+					"name": "Rose",
+					"age": 44
+				},
+				"birthday": "1990-4-10",
+				"isMarried": true,
+				"career": "career2",
+				"address": "addr2",
+				"country": "China",
+				"region": "Beijing"
+			},
+			"patient_records": [
+				{
+					"id": "p2",
+					"record_id": "testtest4",
+					"type": "Type2",
+					"time": "2021-4-10 11:45:14",
+					"content": {},
+					"signed_by": {
+						"person": {
+							"id": "doct1",
+							"name": "Banana",
+							"age": 25
+						},
+						"department": "Dep1"
+					},
+					"collaborators": [
+						{
+							"doctor": {
+								"person": {
+									"id": "doct1",
+									"name": "Banana",
+									"age": 25
+								},
+								"department": "Dep1"
+							},
+							"role": "manager"
+						}
+					]
+				},
+				{
+					"id": "p2",
+					"record_id": "testtest5",
+					"type": "Type3",
+					"time": "2021-5-10 11:45:14",
+					"content": {},
+					"signed_by": {
+						"person": {
+							"id": "doct1",
+							"name": "Apple",
+							"age": 24
+						},
+						"department": "Dep1"
+					},
+					"collaborators": [
+						{
+							"doctor": {
+								"person": {
+									"id": "doct2",
+									"name": "Apple",
+									"age": 24
+								},
+								"department": "Dep1"
+							},
+							"role": "manager"
+						}
+					]
+				}
+			]
+		},
+		{
+			"patient_info": {
+				"person": {
+					"id": "p3",
+					"isMarried": false,
+					"name": "Guy"
+				},
+				"birthday": "1975-4-20",
+				"career": "career3",
+				"address": "addr3",
+				"country": "China",
+				"region": "Beijing"
+			},
+			"patient_records": []
+		}
+	]
+}
